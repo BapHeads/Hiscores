@@ -20,56 +20,57 @@
     <meta itemprop="description" content="Welcome to the Bap Heads Clan Collection Log Hiscores page! This dedicated page proudly displays the clan Clog rankings and will be updated every sunday.">
     <link href="css/rsp777_hiscore-119.css" rel="stylesheet" type="text/css" media="all">
     
-    <!-- Additional CSS for styling -->
+    <!-- Additional CSS for layout adjustments -->
     <style>
-        /* Stretching the image */
-        img.miniimg {
-            width: 100%; /* Makes the image stretch to 100% width of its container */
+        /* Stretching the images (blank.gif, headerHiscores, footerHiscores) */
+        #headerHiscores, #footerHiscores, .miniimg, img[src*="blank.gif"] {
+            width: 100%; /* Stretch to fill the container */
             height: auto; /* Maintain aspect ratio */
         }
 
-        /* Table styling */
+        /* Table styling for better spacing */
         table {
-            width: 100%; /* Makes the table take up full width */
-            border-collapse: collapse; /* Ensures table borders are neatly collapsed */
+            width: 100%; /* Full width */
+            border-collapse: collapse; /* Collapse borders */
+            text-align: left; /* Left align the text */
         }
 
         th, td {
-            padding: 10px; /* Adds padding inside table cells */
-            text-align: left; /* Align text to the left */
+            padding: 12px; /* Space inside cells */
+            text-align: left; /* Left align text in cells */
+            border-bottom: 1px solid #ddd; /* Border for row separation */
         }
 
         th {
-            background-color: #f2f2f2; /* Light background color for header */
+            background-color: #f2f2f2; /* Light gray background for header */
             font-weight: bold;
         }
 
-        td {
-            border-bottom: 1px solid #ddd; /* Adds a bottom border to rows */
-        }
-
-        /* Aligning specific columns */
+        /* Column widths */
         th:nth-child(1), td:nth-child(1) {
-            width: 10%; /* Adjust width of rank column */
+            width: 10%; /* Narrow column for Rank */
         }
 
         th:nth-child(2), td:nth-child(2) {
-            width: 40%; /* Adjust width of name column */
+            width: 50%; /* Wider column for Name */
         }
 
         th:nth-child(3), td:nth-child(3) {
-            width: 20%; /* Adjust width of clogs column */
+            width: 40%; /* Narrower column for Clogs */
         }
 
-        th:nth-child(4), td:nth-child(4) {
-            width: 15%; /* Adjust width of change column */
+        /* Add some space between the table and the container */
+        .personal-hiscores__table {
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
 
-        th:nth-child(5), td:nth-child(5) {
-            width: 15%; /* Adjust width of pets column */
+        /* Footer adjustments if you have footerHiscores */
+        #footerHiscores {
+            margin-top: 20px;
         }
 
-        /* Responsive design for smaller screens */
+        /* Responsive adjustments for smaller screens */
         @media (max-width: 600px) {
             th, td {
                 padding: 8px;
@@ -87,7 +88,7 @@
 
     <br>
 
-    <strong><img src="https://i.imgur.com/Y03remk.png" alt="pic" class="miniimg" /></strong><br />
+    <strong><img src="https://i.imgur.com/Y03remk.png" alt="pic" /></strong><br />
     <br />
 
     <div align="center">
@@ -127,7 +128,7 @@
     <div id="loading" style="display: block;">Loading...</div>
 
     <script type="module">
-        // JavaScript code as previously discussed...
+        // JavaScript as before...
     </script>
 </body>
 
